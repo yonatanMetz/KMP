@@ -11,11 +11,21 @@ uses it to scan S, applying simple rules to the index to decide how to shift the
 This is a simple approach to apply this algorithm for scanning a genome fasta file and finding short sequences that appear in the genome. The output of this function is a file containing a list of sequences, their locations in the genome and their count.
 
 # Installation
-
+Make sure you have all required libraries
 ```bash
 $ pip install -r requirements.txt
 ```
 
 # Usage
+The function has 2 mandatory inputs and 2 optional inputs:
+pattern_file: Fasta file containing a set of short sequences.
+text_file: Fasta file containing text to search in.
+-o, --output_file: Optional file to write search results to (default: outputs to command line)
+--ignore-case: Ignore case when searching
+
+```bash
+$ python3 KMP.py pattern_file text_file -o out.txt --ignore_case
+```
+
 
 
