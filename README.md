@@ -18,10 +18,10 @@ $ pip install -r requirements.txt
 
 # Usage
 The function has 2 mandatory inputs and 2 optional inputs:
-pattern_file: Fasta file containing a set of short sequences.
-text_file: Fasta file containing text to search in.
--o, --output_file: Optional file to write search results to (default: outputs to command line)
---ignore-case: Ignore case when searching
+- pattern_file: Fasta file containing a set of short sequences.
+- text_file: Fasta file containing text to search in.
+- -o, --output_file: Optional file to write search results to (default: outputs to command line)
+- --ignore-case: Ignore case when searching
 
 ```bash
 $ python3 KMP.py pattern_file text_file -o out.txt --ignore_case
